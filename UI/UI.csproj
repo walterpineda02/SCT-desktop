@@ -46,6 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DASHBOARD\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DASHBOARD\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="ORMCode\Archivo.cs" />
     <Compile Include="ORMCode\Archivo.Designer.cs">
       <DependentUpon>Archivo.cs</DependentUpon>
@@ -119,5 +125,6 @@
       <DependentUpon>ORM.xpo</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
