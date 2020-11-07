@@ -17,3 +17,5 @@ C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\UI\obj\Debug\UI.csproj.CoreCom
 C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\UI\obj\Debug\UI.csproj.CopyComplete
 C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\UI\obj\Debug\UI.dll
 C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\UI\obj\Debug\UI.pdb
+C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\UI\obj\Debug\UI.DASHBOARD.Home.resources
+C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\UI\obj\Debug\UI.csproj.GenerateResource.cache
