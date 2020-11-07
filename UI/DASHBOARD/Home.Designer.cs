@@ -325,7 +325,7 @@
             // 
             this.gereToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.gereToolStripMenuItem.Name = "gereToolStripMenuItem";
-            this.gereToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
+            this.gereToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
             this.gereToolStripMenuItem.Text = "Generar reporte de existencias actuales";
             this.gereToolStripMenuItem.Click += new System.EventHandler(this.gereToolStripMenuItem_Click);
             // 
@@ -378,22 +378,20 @@
             // tsb_despachar_orden
             // 
             this.tsb_despachar_orden.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsb_despachar_orden.Image = ((System.Drawing.Image)(resources.GetObject("tsb_despachar_orden.Image")));
             this.tsb_despachar_orden.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsb_despachar_orden.Margin = new System.Windows.Forms.Padding(0, 1, 20, 2);
             this.tsb_despachar_orden.Name = "tsb_despachar_orden";
-            this.tsb_despachar_orden.Size = new System.Drawing.Size(60, 81);
+            this.tsb_despachar_orden.Size = new System.Drawing.Size(23, 81);
             this.tsb_despachar_orden.Text = "Despachar lista de empaque";
             this.tsb_despachar_orden.Click += new System.EventHandler(this.tsb_despachar_orden_Click_1);
             // 
             // tsb_cerrar_orden
             // 
             this.tsb_cerrar_orden.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsb_cerrar_orden.Image = ((System.Drawing.Image)(resources.GetObject("tsb_cerrar_orden.Image")));
             this.tsb_cerrar_orden.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsb_cerrar_orden.Margin = new System.Windows.Forms.Padding(0, 1, 20, 2);
             this.tsb_cerrar_orden.Name = "tsb_cerrar_orden";
-            this.tsb_cerrar_orden.Size = new System.Drawing.Size(60, 81);
+            this.tsb_cerrar_orden.Size = new System.Drawing.Size(23, 81);
             this.tsb_cerrar_orden.Text = "Cerrar Orden";
             this.tsb_cerrar_orden.Visible = false;
             // 
@@ -401,7 +399,6 @@
             // 
             this.tsb_ver_protocolos.AutoSize = false;
             this.tsb_ver_protocolos.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsb_ver_protocolos.Image = ((System.Drawing.Image)(resources.GetObject("tsb_ver_protocolos.Image")));
             this.tsb_ver_protocolos.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsb_ver_protocolos.Margin = new System.Windows.Forms.Padding(0, 1, 20, 2);
             this.tsb_ver_protocolos.Name = "tsb_ver_protocolos";
@@ -413,16 +410,15 @@
             // tsb_buscar_productos
             // 
             this.tsb_buscar_productos.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsb_buscar_productos.Image = ((System.Drawing.Image)(resources.GetObject("tsb_buscar_productos.Image")));
             this.tsb_buscar_productos.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsb_buscar_productos.Margin = new System.Windows.Forms.Padding(0, 1, 20, 2);
             this.tsb_buscar_productos.Name = "tsb_buscar_productos";
-            this.tsb_buscar_productos.Size = new System.Drawing.Size(60, 81);
+            this.tsb_buscar_productos.Size = new System.Drawing.Size(23, 81);
             this.tsb_buscar_productos.Text = "Buscar envios";
             this.tsb_buscar_productos.ToolTipText = "Buscar productos";
             this.tsb_buscar_productos.Click += new System.EventHandler(this.tsb_buscar_productos_Click);
             // 
-            // Principal
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -430,9 +426,8 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.MenuPrincipal);
             this.Controls.Add(this.panel_principal);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Principal";
+            this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EMS";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Principal_FormClosing);
