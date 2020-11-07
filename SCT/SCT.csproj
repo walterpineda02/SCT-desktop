@@ -34,9 +34,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Data.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpo.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +51,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
@@ -54,73 +61,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORMCode\Archivo.cs" />
-    <Compile Include="ORMCode\Archivo.Designer.cs">
-      <DependentUpon>Archivo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMCode\Auditoria.cs" />
-    <Compile Include="ORMCode\Auditoria.Designer.cs">
-      <DependentUpon>Auditoria.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMCode\AuditoriaDetalle.cs" />
-    <Compile Include="ORMCode\AuditoriaDetalle.Designer.cs">
-      <DependentUpon>AuditoriaDetalle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMCode\Categoria.cs" />
-    <Compile Include="ORMCode\Categoria.Designer.cs">
-      <DependentUpon>Categoria.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMCode\ConnectionHelper.cs" />
-    <Compile Include="ORMCode\DetalleReparacion.cs" />
-    <Compile Include="ORMCode\DetalleReparacion.Designer.cs">
-      <DependentUpon>DetalleReparacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMCode\Equipo.cs" />
-    <Compile Include="ORMCode\Equipo.Designer.cs">
-      <DependentUpon>Equipo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMCode\HistorialDireccionEquipo.cs" />
-    <Compile Include="ORMCode\HistorialDireccionEquipo.Designer.cs">
-      <DependentUpon>HistorialDireccionEquipo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMCode\Menu.cs" />
-    <Compile Include="ORMCode\Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMCode\Modulo.cs" />
-    <Compile Include="ORMCode\Modulo.Designer.cs">
-      <DependentUpon>Modulo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMCode\ParametroSistema.cs" />
-    <Compile Include="ORMCode\ParametroSistema.Designer.cs">
-      <DependentUpon>ParametroSistema.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMCode\Permiso.cs" />
-    <Compile Include="ORMCode\Permiso.Designer.cs">
-      <DependentUpon>Permiso.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMCode\RecuperacionContrasenaUsuario.cs" />
-    <Compile Include="ORMCode\RecuperacionContrasenaUsuario.Designer.cs">
-      <DependentUpon>RecuperacionContrasenaUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMCode\Reparacion.cs" />
-    <Compile Include="ORMCode\Reparacion.Designer.cs">
-      <DependentUpon>Reparacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMCode\Rol.cs" />
-    <Compile Include="ORMCode\Rol.Designer.cs">
-      <DependentUpon>Rol.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMCode\RolPermiso.cs" />
-    <Compile Include="ORMCode\RolPermiso.Designer.cs">
-      <DependentUpon>RolPermiso.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMCode\Usuario.cs" />
-    <Compile Include="ORMCode\Usuario.Designer.cs">
-      <DependentUpon>Usuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -130,10 +75,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="ORM.xpo" />
-    <None Include="ORM.xpo.diagram">
-      <DependentUpon>ORM.xpo</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -146,6 +87,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UI\UI.csproj">
+      <Project>{9f8b4d3c-efa1-4417-bbf8-2814ceebb8f9}</Project>
+      <Name>UI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
