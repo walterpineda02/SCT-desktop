@@ -41,3 +41,6 @@ C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\SCT\obj\Debug\SCT.exe
 C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\SCT\obj\Debug\SCT.pdb
 C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\SCT\bin\Debug\UI.dll
 C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\SCT\bin\Debug\UI.pdb
+C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\SCT\bin\Debug\MODELS.dll
+C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\SCT\bin\Debug\netstandard.dll
+C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\SCT\bin\Debug\MODELS.pdb

@@ -52,6 +52,12 @@
     <Compile Include="DASHBOARD\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="LOGIN\LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN\LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
     <Compile Include="ORMCode\Archivo.cs" />
     <Compile Include="ORMCode\Archivo.Designer.cs">
       <DependentUpon>Archivo.cs</DependentUpon>
@@ -134,6 +140,9 @@
     <EmbeddedResource Include="DASHBOARD\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN\LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -141,6 +150,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="IMG\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MODELS\MODELS.csproj">
+      <Project>{11a72c25-172d-45da-99a4-639b62b5ef6f}</Project>
+      <Name>MODELS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
