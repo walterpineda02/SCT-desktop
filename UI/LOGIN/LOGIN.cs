@@ -23,13 +23,14 @@ namespace UI.LOGIN
         public LOGIN()
         {
             InitializeComponent();
+            setConnection();
         }
 
         private void LOGIN_Load(object sender, EventArgs e)
         {
             usuario = new User();
             // LEER_FICHERO_DE_CONFIGURACION();
-            setDefaultUser();
+            //setDefaultUser();
 
         }
 
@@ -238,6 +239,12 @@ namespace UI.LOGIN
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+        private void setConnection() {
+          XpoDefault.DataLayer = XpoDefault.GetDataLayer(
+           sct.ConnectionHelper.ConnectionString,
+           DevExpress.Xpo.DB.AutoCreateOption.DatabaseAndSchema
+           );
         }
     }
 }

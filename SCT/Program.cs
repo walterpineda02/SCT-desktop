@@ -20,10 +20,10 @@ namespace SCT
         static void Main()
         {
 
-             XpoDefault.DataLayer = XpoDefault.GetDataLayer(
+             /*XpoDefault.DataLayer = XpoDefault.GetDataLayer(
                 ConnectionHelper.ConnectionString,
                 DevExpress.Xpo.DB.AutoCreateOption.DatabaseAndSchema
-                );
+                );*/
            
 
             Application.EnableVisualStyles();

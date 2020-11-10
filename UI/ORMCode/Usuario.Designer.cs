@@ -103,17 +103,29 @@ namespace UI.sct
             get { return fUsuario1; }
             set { SetPropertyValue<string>(nameof(Usuario1), ref fUsuario1, value); }
         }
-        string fContraseña;
-        public string Contraseña
+        string fContrasena;
+        public string Contrasena
         {
-            get { return fContraseña; }
-            set { SetPropertyValue<string>(nameof(Contraseña), ref fContraseña, value); }
+            get { return fContrasena; }
+            set { SetPropertyValue<string>(nameof(Contrasena), ref fContrasena, value); }
         }
         int fActivo;
         public int Activo
         {
             get { return fActivo; }
             set { SetPropertyValue<int>(nameof(Activo), ref fActivo, value); }
+        }
+        DateTime fFechaUltimaConexion;
+        public DateTime FechaUltimaConexion
+        {
+            get { return fFechaUltimaConexion; }
+            set { SetPropertyValue<DateTime>(nameof(FechaUltimaConexion), ref fFechaUltimaConexion, value); }
+        }
+        DateTime fFechaUltimoCambioContrasena;
+        public DateTime FechaUltimoCambioContrasena
+        {
+            get { return fFechaUltimoCambioContrasena; }
+            set { SetPropertyValue<DateTime>(nameof(FechaUltimoCambioContrasena), ref fFechaUltimoCambioContrasena, value); }
         }
         bool fIdEstadoRegistro;
         public bool IdEstadoRegistro
@@ -158,24 +170,6 @@ namespace UI.sct
         {
             get { return fDireccionEquipoModificacion; }
             set { SetPropertyValue<string>(nameof(DireccionEquipoModificacion), ref fDireccionEquipoModificacion, value); }
-        }
-        string fContrasena;
-        public string Contrasena
-        {
-            get { return fContrasena; }
-            set { SetPropertyValue<string>(nameof(Contrasena), ref fContrasena, value); }
-        }
-        DateTime fFechaUltimaConexion;
-        public DateTime FechaUltimaConexion
-        {
-            get { return fFechaUltimaConexion; }
-            set { SetPropertyValue<DateTime>(nameof(FechaUltimaConexion), ref fFechaUltimaConexion, value); }
-        }
-        DateTime fFechaUltimoCambioContrasena;
-        public DateTime FechaUltimoCambioContrasena
-        {
-            get { return fFechaUltimoCambioContrasena; }
-            set { SetPropertyValue<DateTime>(nameof(FechaUltimoCambioContrasena), ref fFechaUltimoCambioContrasena, value); }
         }
         [Association(@"ReparacionReferencesUsuario")]
         public XPCollection<Reparacion> Reparacions { get { return GetCollection<Reparacion>(nameof(Reparacions)); } }

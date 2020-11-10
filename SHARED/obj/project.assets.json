@@ -179,23 +179,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Armando\\.nuget\\packages\\": {},
+    "C:\\Users\\WALTER PINEDA\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Armando\\Desktop\\DEVELOPER\\DevExpress\\SCT\\SHARED\\SHARED.csproj",
+      "projectUniqueName": "C:\\Users\\WALTER PINEDA\\SCT-desktop\\SHARED\\SHARED.csproj",
       "projectName": "SHARED",
-      "projectPath": "C:\\Users\\Armando\\Desktop\\DEVELOPER\\DevExpress\\SCT\\SHARED\\SHARED.csproj",
-      "packagesPath": "C:\\Users\\Armando\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Armando\\Desktop\\DEVELOPER\\DevExpress\\SCT\\SHARED\\obj\\",
+      "projectPath": "C:\\Users\\WALTER PINEDA\\SCT-desktop\\SHARED\\SHARED.csproj",
+      "packagesPath": "C:\\Users\\WALTER PINEDA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\WALTER PINEDA\\SCT-desktop\\SHARED\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Armando\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\WALTER PINEDA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

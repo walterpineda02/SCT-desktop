@@ -39,7 +39,7 @@ namespace UI.sct
             Array.Copy(persistentTypes, copy, persistentTypes.Length);
             return copy;
         }
-        public const string ConnectionString = @"XpoProvider=MSSqlServer;data source=DIACACHIMBA;integrated security=SSPI;initial catalog=sct";
+        public const string ConnectionString = @"XpoProvider=MSSqlServer;data source=DESKTOP-EPQHMAV;integrated security=SSPI;initial catalog=sct";
         public static void Connect(DevExpress.Xpo.DB.AutoCreateOption autoCreateOption, bool threadSafe = false)
         {
             if (threadSafe)

@@ -128,15 +128,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SessionUsuario.cs">
-      <SubType>Component</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ORM.xpo" />
-    <None Include="ORM.xpo.diagram">
-      <DependentUpon>ORM.xpo</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DASHBOARD\Home.resx">
@@ -162,6 +153,12 @@
       <Project>{55d2b5e4-e918-49bc-8775-c01a3d3445f7}</Project>
       <Name>SHARED</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ORM.xpo" />
+    <None Include="ORM.xpo.diagram">
+      <DependentUpon>ORM.xpo</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
