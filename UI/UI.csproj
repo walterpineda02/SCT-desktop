@@ -45,7 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="DASHBOARD\Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +128,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SessionUsuario.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="ORM.xpo" />
@@ -155,6 +157,10 @@
     <ProjectReference Include="..\MODELS\MODELS.csproj">
       <Project>{11a72c25-172d-45da-99a4-639b62b5ef6f}</Project>
       <Name>MODELS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SHARED\SHARED.csproj">
+      <Project>{55d2b5e4-e918-49bc-8775-c01a3d3445f7}</Project>
+      <Name>SHARED</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

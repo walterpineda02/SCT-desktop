@@ -40,9 +40,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.ct_usuario = new System.Windows.Forms.TextBox();
             this.uwLogin = new DevExpress.Xpo.UnitOfWork(this.components);
+            this.session = new DevExpress.Xpo.Session(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uwLogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.session)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -157,6 +159,11 @@
             this.uwLogin.IsObjectModifiedOnNonPersistentPropertyChange = null;
             this.uwLogin.TrackPropertiesModifications = false;
             // 
+            // session
+            // 
+            this.session.IsObjectModifiedOnNonPersistentPropertyChange = null;
+            this.session.TrackPropertiesModifications = false;
+            // 
             // LOGIN
             // 
             this.AcceptButton = this.bt_acceder;
@@ -175,6 +182,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uwLogin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.session)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -191,5 +199,6 @@
         public System.Windows.Forms.Button bt_acceder;
         private System.Windows.Forms.Label lb_titulo_gest_cliente;
         private DevExpress.Xpo.UnitOfWork uwLogin;
+        private DevExpress.Xpo.Session session;
     }
 }

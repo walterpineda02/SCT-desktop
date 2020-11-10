@@ -11,6 +11,9 @@ using System.IO;
 using MODELS;
 using SHARED.UTILS;
 
+using DevExpress.Xpo;
+using DevExpress.Xpo.DB;
+
 namespace UI.LOGIN
 {
     public partial class LOGIN : Form
@@ -169,7 +172,7 @@ namespace UI.LOGIN
 
         private void bt_acceder_Click(object sender, EventArgs e)
         {
-            /*
+            
             if (ct_usuario.Text.ToString().Trim().Equals(""))
             {
                 MessageBox.Show("Ingrese el su nombre usuario.",
@@ -182,8 +185,10 @@ namespace UI.LOGIN
                     "Importante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
+
+
             //+++++++
-            if (ct_contraseña.Text.ToString().Trim().Equals("sandino") &&
+            /*if (ct_contraseña.Text.ToString().Trim().Equals("sandino") &&
                 ct_usuario.Text.ToString().Trim().Equals("root"))
             {
                 usuario.ID = 1;
@@ -192,27 +197,42 @@ namespace UI.LOGIN
                 usuario.Contrasena = "sandino";
                 usuario.Tipo = "admin";
                 this.Hide();
-                Principal pri = new Principal(this);
-                pri.Show(); return;
-            }
-            //+++++++++
+                //Principal pri = new Principal(this);
+                //pri.Show(); return;
+            }*/
 
-            List<Object> res = OperacionesUsuario.LOGIN(ct_usuario.Text.ToString().Trim(),
-                ct_contraseña.Text.ToString().Trim());
-            bool si = (bool)res[0];
-            if (!si)
-            {
-                MessageBox.Show("Las credenciales de acceso son incorrectas.",
-    "Importante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //+++++++++
+            string query = @"SELECT COUNT(*) FROM [dbo].[Usuario] WHERE [dbo].[Usuario].[Usuario]=@user AND [dbo].[Usuario].[Usuario]=@pass";
+            int response = -1;
+                
+            if (Session.DefaultSession.IsConnected ) {
+                Session workSession = DevExpress.Xpo.Session.DefaultSession;
+                response = (int) workSession.ExecuteScalar(
+                query,
+                new string[] { "user", "pass" },
+                new object[] { ct_usuario.Text.ToString().Trim(), ct_contraseña.Text.ToString().Trim() }
+                );
+            } else {
+                MessageBox.Show(" no hay conexion");
+                return;
             }
-            else
-            {
+            
+            
+
+            
+            MessageBox.Show("response "+ response );
+            if ( response != 0 ) {
+                MessageBox.Show("Las credenciales de acceso son incorrectas.",
+                "Importante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            } else {
+                MessageBox.Show("registro correcto");
+                /*
                 usuario = res[1] as Usuario;
                 this.Hide();
                 Principal pri = new Principal(this);
-                pri.Show();
+                pri.Show();*/
             }
-            */
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

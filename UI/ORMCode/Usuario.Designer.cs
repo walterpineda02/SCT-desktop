@@ -159,6 +159,24 @@ namespace UI.sct
             get { return fDireccionEquipoModificacion; }
             set { SetPropertyValue<string>(nameof(DireccionEquipoModificacion), ref fDireccionEquipoModificacion, value); }
         }
+        string fContrasena;
+        public string Contrasena
+        {
+            get { return fContrasena; }
+            set { SetPropertyValue<string>(nameof(Contrasena), ref fContrasena, value); }
+        }
+        DateTime fFechaUltimaConexion;
+        public DateTime FechaUltimaConexion
+        {
+            get { return fFechaUltimaConexion; }
+            set { SetPropertyValue<DateTime>(nameof(FechaUltimaConexion), ref fFechaUltimaConexion, value); }
+        }
+        DateTime fFechaUltimoCambioContrasena;
+        public DateTime FechaUltimoCambioContrasena
+        {
+            get { return fFechaUltimoCambioContrasena; }
+            set { SetPropertyValue<DateTime>(nameof(FechaUltimoCambioContrasena), ref fFechaUltimoCambioContrasena, value); }
+        }
         [Association(@"ReparacionReferencesUsuario")]
         public XPCollection<Reparacion> Reparacions { get { return GetCollection<Reparacion>(nameof(Reparacions)); } }
         [Association(@"ReparacionReferencesUsuario1")]

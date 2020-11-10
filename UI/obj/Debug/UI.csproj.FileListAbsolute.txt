@@ -119,3 +119,5 @@ C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\UI\bin\Debug\System.Xml.XPath.
 C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\UI\bin\Debug\System.Xml.XPath.XDocument.dll
 C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\UI\bin\Debug\MODELS.dll
 C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\UI\bin\Debug\MODELS.pdb
+C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\UI\bin\Debug\SHARED.dll
+C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\UI\bin\Debug\SHARED.pdb
