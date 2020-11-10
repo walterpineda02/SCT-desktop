@@ -10,9 +10,9 @@ C:\Users\Armando\Desktop\DEVELOPER\DevExpress\SCT\MODELS\obj\Debug\netstandard2.
 C:\Users\WALTER PINEDA\SCT-desktop\MODELS\bin\Debug\netstandard2.0\MODELS.deps.json
 C:\Users\WALTER PINEDA\SCT-desktop\MODELS\bin\Debug\netstandard2.0\MODELS.dll
 C:\Users\WALTER PINEDA\SCT-desktop\MODELS\bin\Debug\netstandard2.0\MODELS.pdb
-C:\Users\WALTER PINEDA\SCT-desktop\MODELS\obj\Debug\netstandard2.0\MODELS.csprojAssemblyReference.cache
 C:\Users\WALTER PINEDA\SCT-desktop\MODELS\obj\Debug\netstandard2.0\MODELS.csproj.CoreCompileInputs.cache
 C:\Users\WALTER PINEDA\SCT-desktop\MODELS\obj\Debug\netstandard2.0\MODELS.AssemblyInfoInputs.cache
 C:\Users\WALTER PINEDA\SCT-desktop\MODELS\obj\Debug\netstandard2.0\MODELS.AssemblyInfo.cs
 C:\Users\WALTER PINEDA\SCT-desktop\MODELS\obj\Debug\netstandard2.0\MODELS.dll
 C:\Users\WALTER PINEDA\SCT-desktop\MODELS\obj\Debug\netstandard2.0\MODELS.pdb
+C:\Users\WALTER PINEDA\SCT-desktop\MODELS\obj\Debug\netstandard2.0\MODELS.csprojAssemblyReference.cache

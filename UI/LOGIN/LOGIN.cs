@@ -23,7 +23,7 @@ namespace UI.LOGIN
         public LOGIN()
         {
             InitializeComponent();
-            setConnection();
+            //setConnection();
         }
 
         private void LOGIN_Load(object sender, EventArgs e)
@@ -205,8 +205,15 @@ namespace UI.LOGIN
             //+++++++++
             string query = @"SELECT COUNT(*) FROM [dbo].[Usuario] WHERE [dbo].[Usuario].[Usuario]=@user AND [dbo].[Usuario].[Usuario]=@pass";
             int response = -1;
-                
-            if (Session.DefaultSession.IsConnected ) {
+
+            Session workSession = DevExpress.Xpo.Session.DefaultSession;
+            response = (int)workSession.ExecuteScalar(
+            query,
+            new string[] { "user", "pass" },
+            new object[] { ct_usuario.Text.ToString().Trim(), ct_contraseña.Text.ToString().Trim() }
+            );
+
+            /*if (Session.DefaultSession.IsConnected ) {
                 Session workSession = DevExpress.Xpo.Session.DefaultSession;
                 response = (int) workSession.ExecuteScalar(
                 query,
@@ -216,11 +223,11 @@ namespace UI.LOGIN
             } else {
                 MessageBox.Show(" no hay conexion");
                 return;
-            }
-            
-            
+            }*/
 
-            
+
+
+
             MessageBox.Show("response "+ response );
             if ( response != 0 ) {
                 MessageBox.Show("Las credenciales de acceso son incorrectas.",
@@ -242,7 +249,7 @@ namespace UI.LOGIN
         }
         private void setConnection() {
           XpoDefault.DataLayer = XpoDefault.GetDataLayer(
-           sct.ConnectionHelper.ConnectionString,
+           UI.sct.ConnectionHelper.ConnectionString,
            DevExpress.Xpo.DB.AutoCreateOption.DatabaseAndSchema
            );
         }
