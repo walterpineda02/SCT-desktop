@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using UI.DASHBOARD;
 using UI.LOGIN;
 using UI.sct;
+using UI.ROLE;
 
 namespace SCT
 {
@@ -28,7 +29,7 @@ namespace SCT
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LOGIN());
+            Application.Run(new Roles());
         }
     }
 }
